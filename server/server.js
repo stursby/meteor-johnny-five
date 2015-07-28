@@ -7,7 +7,7 @@ Meteor.startup(function(){
 
   // Seed DB if no record found
   if (Arduino.find().count() === 0) {
-    Arduino.insert({value: 'OFF'});
+    Arduino.insert({value: 'on'});
   }
 
   // Setup new johnny-five board
@@ -36,10 +36,10 @@ Meteor.methods({
   'toggleLED': function(status) {
     if (status) {
       led.on();
-      Arduino.update({}, {value: 'ON'});
+      Arduino.update({}, {value: 'on'});
     } else {
       led.off();
-      Arduino.update({}, {value: 'OFF'});
+      Arduino.update({}, {value: 'off'});
     }
   }
 });

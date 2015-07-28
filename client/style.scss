@@ -1,0 +1,84 @@
+$white: #FFF;
+$gray: #E5E7E9;
+$slate: #373941;
+$green: #59A37E;
+$red: #D26463;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: $gray;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.panel {
+  width: 300px;
+  margin: 150px auto;
+  background: $white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.controls {
+  background: $slate;
+  color: $white;
+  height: 45px;
+  line-height: 45px;
+}
+
+button, span {
+  float: left;
+}
+
+button {
+  color: $white;
+  line-height: 45px;
+  background: none;
+  outline: none;
+  border: none;
+  appearance: none;
+  width: 75%;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($slate, 8);
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+span {
+  width: 25%;
+  background: #000;
+  background: $red;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &.on {
+    background: $green;
+  }
+}
