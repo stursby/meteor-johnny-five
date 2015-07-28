@@ -26,6 +26,11 @@ Meteor.startup(function(){
 
 });
 
+// Publish arduino collection
+Meteor.publish('arduino', function() {
+  return Arduino.find({}, {limit: 1});
+});
+
 // toggleLED method and update record
 Meteor.methods({
   'toggleLED': function(status) {

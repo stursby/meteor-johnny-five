@@ -7,6 +7,9 @@ var ledOn = false;
 // Client only
 if (Meteor.isClient) {
 
+  // Subscribe to arduino collection
+  Meteor.subscribe('arduino');
+
   // Send one record to {{status}} helper
   Template.body.helpers({
     status: function () {
