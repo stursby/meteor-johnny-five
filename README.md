@@ -10,10 +10,10 @@ This is a simple [Meteor](https://www.meteor.com/) application for connecting an
 
 3. Clone this repo and change into that directory
 
-    git clone https://github.com/stursby/meteor-johnny-five.git && cd meteor-johnny-five
+        git clone https://github.com/stursby/meteor-johnny-five.git && cd meteor-johnny-five
 
 4. Start up the application
 
-    meteor
+        meteor
 
 5. Visit `http://localhost:3000/` in your Browser.
