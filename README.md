@@ -2,6 +2,8 @@
 
 This is a simple [Meteor](https://www.meteor.com/) application for connecting an [Arduino](https://www.arduino.cc/) device with the [Johnny-Five](http://johnny-five.io/) library.
 
+![demo](demo.gif)
+
 ## Getting started
 
 1. Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
