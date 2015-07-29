@@ -16,4 +16,4 @@ This is a simple [Meteor](https://www.meteor.com/) application for connecting an
 
         meteor
 
-5. Visit `http://localhost:3000/` in your Browser.
+5. Visit [http://localhost:3000](http://localhost:3000/) in your Browser.
